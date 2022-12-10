@@ -216,7 +216,7 @@ Cycle 161 -> ######################################## <- Cycle 200
 Cycle 201 -> ######################################## <- Cycle 240
 ```
 
-So, by [carefully](https://en.wikipedia.org/wiki/Racing**the**Beam) [timing](https://www.youtube.com/watch?v=sJFnWZH5FXc) the CPU instructions and the CRT drawing operations, you should be able to determine whether the sprite is visible the instant each pixel is drawn. If the sprite is positioned such that one of its three pixels is the pixel currently being drawn, the screen produces a **lit** pixel (`#`); otherwise, the screen leaves the pixel **dark** (`.`).
+So, by [carefully](https://en.wikipedia.org/wiki/Racing_the_Beam) [timing](https://www.youtube.com/watch?v=sJFnWZH5FXc) the CPU instructions and the CRT drawing operations, you should be able to determine whether the sprite is visible the instant each pixel is drawn. If the sprite is positioned such that one of its three pixels is the pixel currently being drawn, the screen produces a **lit** pixel (`#`); otherwise, the screen leaves the pixel **dark** (`.`).
 
 The first few pixels from the larger example above are drawn as follows:
 

@@ -13,4 +13,4 @@ for line in data:
 elf_calories.sort(reverse=True)
 
 print(f'solution to part 1: {elf_calories[0]}')
-print(f'solution to part 1: {elf_calories[0] + elf_calories[1] + elf_calories[2]}')
+print(f'solution to part 2: {elf_calories[0] + elf_calories[1] + elf_calories[2]}')

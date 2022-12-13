@@ -1,3 +1,5 @@
+import functools
+
 with open("input.txt") as f:
     data = f.read()
 data = [p.splitlines() for p in data.split("\n\n")]
@@ -40,4 +42,12 @@ for key, value in packets.items():
 
 print(f'Solution to part one: {total}')
 
+packets = [[[2]],[[6]]]
+for pair in data:
+    packets.append(eval(pair[0]))
+    packets.append(eval(pair[1]))
 
+packets = sorted(packets, key=functools.cmp_to_key(compare_data), reverse=True)
+decoder_key = (packets.index([[2]]) + 1) * (packets.index([[6]]) + 1)
+
+print(f'Solution to part two: {decoder_key}')
